@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Training TR-102 Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+ <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #2c3e50;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e2f;
+    padding: 15px 25px;
+    border-radius: 12px 12px 0 0;
+    color: #ffffff;
+  }
+
+  header img {
+    height: 50px;
+  }
+
+  .home-button {
+    background-color: #00bcd4; /* Blue */
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+
+  .home-button:hover {
+    background-color: #0097a7;
+  }
+
+  nav {
+    text-align: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    display: inline-block;
+    background: #673ab7; /* Purple */
+    color: #fff;
+    padding: 10px 20px;
+    margin: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover {
+    background: #512da8;
+    transform: scale(1.05);
+  }
+
+  h1, h2, p {
+    text-align: center;
+  }
+
+  .section {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  .section.active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .pdf-container iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .certificate-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+
+  .project-button {
+    background-color: #e53935; /* Red */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+  }
+
+  .project-button:hover {
+    background-color: #c62828;
+    transform: scale(1.05);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #1e1e2f;
+    color: #fff;
+    border-radius: 0 0 12px 12px;
+  }
+
+  footer a {
+    color: #00bcd4;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .pdf-container iframe {
+      height: 400px;
+    }
+  }
+
+  #home h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  #home p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  #home h2 {
+    font-size: 1.4rem;
+    color: #444;
+  }
+</style>
+
+
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <img src="https://gndec.ac.in/sae/img/logo.png" alt="GNDEC Logo" />
+      <a href="#" class="home-button" onclick="showSection('home')">Home</a>
+      <img src="https://stepgndec.com/wp-content/themes/STEPv8/img/logo-arizon-1.png" alt="DD Logo" />
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+      <h1>Training TR-102 Report</h1>
+      <p>By Ekamjot Kaur, URN 2302867, CRN 2315264<br>Guru Nanak Dev Engineering College, Ludhiana</p>
+      <h2>4-Week Training at Science & Technology Entrepreneurs' Park (STEP)</h2>
+    </section>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#" onclick="showSection('certificate')">Training Certificate</a>
+      <a href="#" onclick="showSection('final-report')">Final Report</a>
+      
+      <!-- Day Links -->
+      <a href="#" onclick="showSection('day1')">Day 1</a>
+      <a href="#" onclick="showSection('day2')">Day 2</a>
+      <a href="#" onclick="showSection('day3')">Day 3</a>
+      <a href="#" onclick="showSection('day4')">Day 4</a>
+      <a href="#" onclick="showSection('day5')">Day 5</a>
+      <a href="#" onclick="showSection('day6')">Day 6</a>
+      <a href="#" onclick="showSection('day7')">Day 7</a>
+      <a href="#" onclick="showSection('day8')">Day 8</a>
+      <a href="#" onclick="showSection('day9')">Day 9</a>
+      <a href="#" onclick="showSection('day10')">Day 10</a>
+      <a href="#" onclick="showSection('day11')">Day 11</a>
+      <a href="#" onclick="showSection('day12')">Day 12</a>
+      <a href="#" onclick="showSection('day13')">Day 13</a>
+      <a href="#" onclick="showSection('day14')">Day 14</a>
+      <a href="#" onclick="showSection('day15')">Day 15</a>
+      <a href="#" onclick="showSection('day16')">Day 16</a>
+      <a href="#" onclick="showSection('day17')">Day 17</a>
+      <a href="#" onclick="showSection('day18')">Day 18</a>
+      <a href="#" onclick="showSection('day19')">Day 19</a>
+      <a href="#" onclick="showSection('day20')">Day 20</a>
+      <a href="#" onclick="showSection('day21')">Day 21</a>
+      <a href="#" onclick="showSection('day22')">Day 22</a>
+      <a href="#" onclick="showSection('day23')">Day 23</a>
+
+      <a href="#" onclick="showSection('projects')" style="background-color:#673ab7;">Projects</a>
+    </nav>
+
+    <!-- Certificate Section -->
+    <section id="certificate" class="section">
+      <h1>Training Certificate</h1>
+      <div class="pdf-container">
+        <iframe src="training certificate.pdf"></iframe>
+      </div>
+    </section>
+
+   <!-- Final Report -->
+<section id="final-report" class="section">
+  <h1>Final Report</h1>
+  <div class="pdf-container">
+    <iframe src="report very final.pdf"></iframe>
+  </div>
+</section>
+
+<!-- Day Sections -->
+<section id="day1" class="section"><h1>Day 1 Report</h1><div class="pdf-container"><iframe src="day 1.pdf"></iframe></div></section>
+<section id="day2" class="section"><h1>Day 2 Report</h1><div class="pdf-container"><iframe src="day 2.pdf"></iframe></div></section>
+<section id="day3" class="section"><h1>Day 3 Report</h1><div class="pdf-container"><iframe src="day 3.pdf"></iframe></div></section>
+<section id="day4" class="section"><h1>Day 4 Report</h1><div class="pdf-container"><iframe src="day 4.pdf"></iframe></div></section>
+<section id="day5" class="section"><h1>Day 5 Report</h1><div class="pdf-container"><iframe src="day 5.pdf"></iframe></div></section>
+<section id="day6" class="section"><h1>Day 6 Report</h1><div class="pdf-container"><iframe src="day 6.pdf"></iframe></div></section>
+<section id="day7" class="section"><h1>Day 7 Report</h1><div class="pdf-container"><iframe src="day 7.pdf"></iframe></div></section>
+<section id="day8" class="section"><h1>Day 8 Report</h1><div class="pdf-container"><iframe src="day 8.pdf"></iframe></div></section>
+<section id="day9" class="section"><h1>Day 9 Report</h1><div class="pdf-container"><iframe src="day 9.pdf"></iframe></div></section>
+<section id="day10" class="section"><h1>Day 10 Report</h1><div class="pdf-container"><iframe src="day 10.pdf"></iframe></div></section>
+<section id="day11" class="section"><h1>Day 11 Report</h1><div class="pdf-container"><iframe src="day 11.pdf"></iframe></div></section>
+<section id="day12" class="section"><h1>Day 12 Report</h1><div class="pdf-container"><iframe src="day12.pdf"></iframe></div></section>
+<section id="day13" class="section"><h1>Day 13 Report</h1><div class="pdf-container"><iframe src="day 13.pdf"></iframe></div></section>
+<section id="day14" class="section"><h1>Day 14 Report</h1><div class="pdf-container"><iframe src="day 14.pdf"></iframe></div></section>
+<section id="day15" class="section"><h1>Day 15 Report</h1><div class="pdf-container"><iframe src="day 15.pdf"></iframe></div></section>
+<section id="day16" class="section"><h1>Day 16 Report</h1><div class="pdf-container"><iframe src="day 16 .pdf"></iframe></div></section>
+<section id="day17" class="section"><h1>Day 17 Report</h1><div class="pdf-container"><iframe src="day 17.pdf"></iframe></div></section>
+<section id="day18" class="section"><h1>Day 18 Report</h1><div class="pdf-container"><iframe src="day 18.pdf"></iframe></div></section>
+<section id="day19" class="section"><h1>Day 19 Report</h1><div class="pdf-container"><iframe src="day 19.pdf"></iframe></div></section>
+<section id="day20" class="section"><h1>Day 20 Report</h1><div class="pdf-container"><iframe src="day 20.pdf"></iframe></div></section>
+<section id="day21" class="section"><h1>Day 21 Report</h1><div class="pdf-container"><iframe src="day 21.pdf"></iframe></div></section>
+<section id="day22" class="section"><h1>Day 22 Report</h1><div class="pdf-container"><iframe src="day 22.pdf"></iframe></div></section>
+<section id="day23" class="section"><h1>Day 23 Report</h1><div class="pdf-container"><iframe src="day 23.pdf"></iframe></div></section>
+
+    <!-- Projects Section -->
+<section id="projects" class="section">
+  <h1>Projects</h1>
+  <div class="project-buttons">
+    <a href="https://ekamjotkaur3.github.io/project1/" target="_blank" class="project-button">SkillSphere</a>
+    <a href="https://ekamjotkaur3.github.io/project2/" target="_blank" class="project-button">Student Dashboard</a>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+      <a href="https://in.linkedin.com/in/ekamjot-kaur-63717927a">&copy; Ekamjot Kaur</a>
+    </footer>
+  </div>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      const target = document.getElementById(id);
+      if(target) target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
